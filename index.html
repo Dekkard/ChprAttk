@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Web Game</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="application/javascript" src="js/script.js"></script>
+</head>
+
+<body class="main main-body">
+    <div class="main main-window">
+        <div id="menu" class="main">
+            <div class="in-abs">
+                <p class="main-title">Chopper Attack</p>
+                <button type="button" class="btn-main" onclick="beginCampaign()">Campaign</button>
+                <button type="button" class="btn-main" onclick="beginEndless()">Endless</button>
+                <button type="button" class="btn-main" onclick="setup()">Configuration</button>
+            </div>
+        </div>
+        <div id="game" class="campaign hide">
+            <div id="player" class="player" style="top:350px;left:0">
+                <img src="images/chopper.png" />
+            </div>
+            <div id="enemies">
+                <div class="enemy" style="top:250px;left:700px">
+                    <p class="health">50</p>
+                </div>
+            </div>
+            <div id="p-hud" class="player-hud">
+                <div class="abs">
+                    <div id="hpbar-rd" class="health-bar-red"></div>
+                    <div id="hpbar-gr" class="health-bar-green"></div>
+                    <span style="display: none;" id="p-hp">50</span>
+                </div>
+            </div>
+            <div class="abs">
+                <span>Ammo: <span id="p-ammo">500</span></span>
+            </div>
+            <button class="btn-sec btn-back" onclick="back()">Back (b)</button>
+        </div>
+    </div>
+    <div id="config" class="config hide">
+        <button class="btn-sec btn-back" onclick="back()">Back (b)</button>
+    </div>
+    </div>
+</body>
+
+</html>

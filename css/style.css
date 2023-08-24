@@ -1,0 +1,135 @@
+.main {
+    position: relative;
+    display: block;
+}
+
+.main-flex {
+    display: flex;
+}
+
+.hide {
+    position: relative;
+    display: none;
+}
+
+.main-body {
+    background-color: rgb(54, 54, 54);
+}
+
+.main-window {
+    width: 750px;
+    height: 750px;
+    background-color: rgb(29, 29, 29);
+}
+
+.in-abs {
+    position: absolute;
+    display: grid;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 5px;
+    text-align: center;
+}
+
+.btn-main {
+    color: rgb(255, 255, 255);
+    background-color: rgb(82, 82, 82);
+    font-size: 2em;
+    margin: 15px auto;
+    padding: 15px;
+    width: 250px;
+    border: 0;
+    text-align: center;
+}
+
+.btn-sec {
+    color: rgb(255, 255, 255);
+    background-color: rgb(82, 82, 82);
+    font-size: 1em;
+    margin: auto;
+    padding: 5px;
+    width: 50px;
+    border: 0;
+    text-align: center;
+}
+
+.btn-back {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.btn-main:hover,
+.btn-sec:hover {
+    background-color: rgb(121, 121, 121);
+}
+
+.btn-main:active,
+.btn-sec:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.player {
+    position: absolute;
+}
+
+.health-bar-red {
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    height: 30px;
+    position: absolute;
+}
+
+.health-bar-green {
+    background-color: rgb(0, 255, 0);
+    width: 200px;
+    height: 30px;
+    position: absolute;
+}
+
+.player-hud {
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(73, 73, 73);
+}
+
+.enemy {
+    position: absolute;
+    width: 25px;
+    height: 75px;
+    background-color: rgb(136, 0, 0);
+}
+
+.bullet {
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    background-color: rgb(243, 206, 86);
+}
+
+.e-bullet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(185, 0, 0);
+}
+
+.abs {
+    float: left;
+    padding: 15px;
+    margin: 0;
+}
+
+.health {
+    display: none;
+}
